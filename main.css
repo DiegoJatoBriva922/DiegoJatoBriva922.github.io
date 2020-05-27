@@ -3,10 +3,11 @@
 
 
 body{
- font-family: 'Mr Dafoe';
+ margin: 0;
 }
 
 .grid-layout{
+font-family: 'Mr Dafoe';
 grid-template-columns: 1fr 4fr;
 display:grid;
 }
