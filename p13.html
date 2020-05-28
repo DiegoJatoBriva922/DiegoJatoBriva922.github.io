@@ -28,8 +28,8 @@ section h2{
   text-align: center;
 }
 
-section.uno p.info:before{
-  content: " ";
+section.uno p.info:before {
+  content: '';
   background: url("https://bit.ly/3aUnWgx");
   width: 64px;
   height: 64px;
@@ -37,8 +37,8 @@ section.uno p.info:before{
   margin-left: 0 0.3em 0 0;
 }
 
-section.uno p.danger:before{
-  content: " ";
+section.uno p.danger:before {
+  content: '';
   background: url(" https://bit.ly/35pJYqE");
   width: 64px;
   height: 64px;
@@ -55,28 +55,28 @@ section.dos span.quoted {
 }
 
 section.dos span.quoted:before {
-  content: " ";
+  content:'""';
   font-size: 2em;
   color: #999;
   margin: 0 0 0 4px;
 }
 
-section.tres a{
+section.tres a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
 }
 
 section.tres a:after{
-  content: "";
+  content: '';
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("https://bit.ly/2KLhcav");
+  background: url("https://bit.ly/2KLhcav") no-repeat top left;
   background-size: cover;
 }
 
-section.cuatro p{
+section.Cuatro p{
   display: inline-block;
   margin: 2em;
   text-transform: uppercase;
@@ -87,8 +87,8 @@ section.cuatro p{
   position: relative;
 }
 
-section.cuatro p.cuatroA:before{
-  content: "";
+section.Cuatro p.CuatroA:before{
+  content: '';
   height: 5px;
   width: 100%;
   background-color: #444;
@@ -100,12 +100,12 @@ section.cuatro p.cuatroA:before{
   transition: transform ease-in-out 500ms;
 }
 
-section.cuatro p.cuatroA:hover:before{
+section.Cuatro p.CuatroA:hover:before{
   transform: scaleX(1);
 }
 
-section.cuatro p.cuatroB:before {
-  content: "";
+section.Cuatro p.CuatroB:before {
+  content: '';
   height: 5px;
   width: 100%;
   background-color: #444;
@@ -113,46 +113,46 @@ section.cuatro p.cuatroB:before {
   bottom: 0;
   right: 0;
   transform: scaleX(0);
-  transform-origin:left;
+  transform-origin:right;
   transition: transform ease-in-out 500ms;
 }
 
-section.cuatro p.cuatroB:hover:before{
+section.Cuatro p.CuatroB:hover:before{
   transform: scaleX(1);
 }
 
-section.cuatro p.cuatroC:before {
-  content: "";
-  height: 5px;
-  width: 100%;
+section.Cuatro p.CuatroC:before {
+  content: '';
+  height: 100%;
+  width: 5px;
   background-color: #444;
   position: absolute;
+  left: 0;
   bottom: 0;
-  right: 0;
-  transform: scaleX(0);
-  transform-origin:left;
+  transform: scaleY(0);
+  transform-origin:bottom;
   transition: transform ease-in-out 500ms;
 }
 
-section.cuatro p.cuatroC:hover:before{
-  transform: scaleX(1);
+section.Cuatro p.CuatroC:hover:before{
+  transform: scaleY(1);
 }
 
-section.cuatro p.cuatroD:before {
-  content: "";
-  height: 5px;
-  width: 100%;
+section.Cuatro p.CuatroD:before {
+  content: '';
+  height: 100%;
+  width: 5px;
   background-color: #444;
   position: absolute;
-  bottom: 0;
   right: 0;
-  transform: scaleX(0);
-  transform-origin:left;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: top;
   transition: transform ease-in-out 500ms;
 }
 
-section.cuatro p.cuatroC:hover:before{
-  transform: scaleX(1);
+section.Cuatro p.CuatroD:hover:before{
+  transform: scaleY(1);
 }
 
   </style>
@@ -160,34 +160,6 @@ section.cuatro p.cuatroC:hover:before{
 </head>
 
 <body>
-  <div class="grid-layout">
-    <header>
-      <h1>Practicas HTML/CSS 2020</h1>
-      <p class="header__left-side"><strong>Diego Jato</strong></p>
-      <p class="header__right-side"><strong>1º BACH B</strong></p>
-    </header>
-    <nav>
-      <a href="p1.html">Practica 1</a>
-      <a href="p2.html">Practica 2</a>
-      <a href="p3.html">Practica 3</a>
-      <a href="p4.html">Practica 4</a>
-      <a href="p5.html">Practica 3</a>
-      <a href="p6.html">Practica 6</a>
-      <a href="p7.html">Practica 7</a>
-      <a href="p8.html">Practica 8</a>
-      <a href="p9.html">Practica 9</a>
-      <a href="p10.html">Practica 10</a>
-      <a href="p11.html">Practica 11</a>
-      <a href="p12a.html">Practica 12a</a>
-      <a href="p12b.html">Practica 12b</a>
-      <a href="p12c.html">Practica 12c</a>
-      <a href="p13.html">Practica 13</a>
-      <a href="p14.html">Practica 14</a>
-    </nav>
-	</div>
-
-    <div class="main">
-
   <h1>Practica 13. pseudo elementos :before y :after</h1>
 
   <section class="uno">
@@ -216,14 +188,14 @@ section.cuatro p.cuatroC:hover:before{
         por coronavirus</strong>,1​ es una enfermedad infecciosa causada por el virus <a href="">SARS-CoV-2</a>.</p>
   </section>
 
-  <section class="cuatro">
+  <section class="Cuatro">
     <p class="CuatroA">Top Left-Right</p>
     <p class="CuatroB">Down Right-Left</p>
     <p class="CuatroC">Left Down-Up</p>
     <p class="CuatroD">Right Up-Down</p>
   </section>
 
-  </div>
+
 
 </body>
 </html>
